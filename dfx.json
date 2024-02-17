@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "chronometer_backend": {
+      "main": "src/chronometer_backend/main.mo",
+      "type": "motoko"
+    },
+    "chronometer_frontend": {
+      "dependencies": [
+        "chronometer_backend"
+      ],
+      "source": [
+        "src/chronometer_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "chronometer_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
